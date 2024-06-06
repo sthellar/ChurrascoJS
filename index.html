@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Esther Silva">
+    <title>Churrasco 🥩</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bloco1">
+        <div class="quadrado" id="formQuadrado">
+            <h3>Churrasco</h3>
+            <form id="churrascoForm">
+                <div id="adultosComAlcool">
+                    <label for="inputAdultosComAlcool">Adultos que bebem: </label>
+                    <br>
+                    <input type="number" id="inputAdultosComAlcool" name="adultosComAlcool" required> 
+                </div>
+                <div id="adultosSemAlcool">
+                    <label for="inputAdultosSemAlcool">Adultos que não bebem: </label>
+                    <br>
+                    <input type="number" id="inputAdultosSemAlcool" name="adultosSemAlcool" required>
+                </div>
+                <div id="criancas">
+                    <label for="inputCriancas">Crianças: </label>
+                    <br>
+                    <input type="number" id="inputCriancas" name="criancas" required>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div id="bloco2" class="esconder">
+        <div id="resultados" class="quadrado">
+            <h3>Resultado</h3>
+            <li id="ResultadoAdultos">Adultos: </li>
+            <li id="ResultadoPessoas">Pessoas: </li>
+            <li id="ResultadoCarne">Carne: </li>
+            <li id="ResultadoAcompanhamentos">Acompanhamentos: </li>
+            <li id="ResultadoCerveja">Cerveja: </li>
+            <li id="ResultadoRefrigerante">Refrigerante: </li>
+            <li id="ResultadoAgua">Água: </li>
+            <button id="recarregarButton">Recarregar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
